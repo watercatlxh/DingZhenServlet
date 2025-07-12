@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: chmod +x ./gradlew  && ./gradlew bootJar
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: DingZhen
           path: build/libs/DingZhenServlet-*.jar
